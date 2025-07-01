@@ -1,8 +1,9 @@
 import express, {Application, Request, Response} from "express"
+import db from "./config/database"
 
 // Application
 const app : Application = express()
-
+db()
 // PORT
 const port : number = 4735
 
